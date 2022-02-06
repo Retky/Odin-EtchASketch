@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    background: #373c41;
+    text-align: center;
+}
+section {
+    display: flex;
+    justify-content: center;
+}
+#grid {
+    width: 500px;
+    height: 500px;
+}
+/* THIS is styling the grid. */
+div {
+    border: solid rgba(80, 0, 0, 0.8);
+}
