@@ -10,8 +10,11 @@ section {
 #grid {
     width: 500px;
     height: 500px;
+    display: flex;
 }
 /* THIS is styling the grid. */
 div {
     border: solid rgba(80, 0, 0, 0.8);
+    width: 20px;
+    height: 20px;
 }
