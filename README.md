@@ -1,6 +1,6 @@
-# Odin-Recipes
+# Odin-EtchASketch
 ## Description
-This is the first project for "The Odin Project". HTML Foundations.
+This is the first project for "The Odin Project". JavaScript Foundations.
 ## Assignment
 1. Follow the instructions atop Odin’s Recipes project to set up a git repository for this project.
 2. Create a webpage with a 16x16 grid of square divs.
