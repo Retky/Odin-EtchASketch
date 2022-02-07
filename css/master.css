@@ -5,7 +5,8 @@ body {
 }
 section {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 #grid {
     border: solid rgba(80, 0, 0, 0.8) 5px;
@@ -16,6 +17,6 @@ section {
 }
 /* THIS is styling the grid. */
 .box {
-    border-bottom: solid rgba(80, 0, 0, 0.8) 2px;
-    border-right: solid rgba(80, 0, 0, 0.8) 2px;
+    border-bottom: solid rgba(80, 0, 0, 0.2) 1px;
+    border-right: solid rgba(80, 0, 0, 0.2) 1px;
 }

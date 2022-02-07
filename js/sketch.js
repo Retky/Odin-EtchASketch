@@ -1,5 +1,6 @@
 // THIS select the Grid.
 const grid = document.getElementById('grid')
+let gridSize = 16
 
 // THIS f create the grid with the box element.
 function createGrid(elements) {
@@ -23,4 +24,14 @@ function createGrid(elements) {
     //  THIS set the grid colums.
     grid.style.setProperty('grid-template-areas', ("'" + gridArray.join(' ') + "'"))
 }
-createGrid(16)
+createGrid(gridSize)
+
+let boxes = document.getElementsByClassName('box')
+let clearButton = document.getElementsByName('clear')[0]
+// THIS is the event on "Clear" Button.
+clearButton.addEventListener('click', function () {
+    // Code here.
+    for (i = 0; i < (gridSize * gridSize); i++) {
+        boxes[i].style.background = ''
+    }
+})
