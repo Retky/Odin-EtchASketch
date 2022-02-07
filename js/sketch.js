@@ -3,6 +3,7 @@ const grid = document.getElementById('grid')
 let gridSize = 16
 
 // THIS f create the grid with the box element.
+
 function createGrid(elements) {
     let gridArray = []
     for (let i = 1; i <= (elements * elements); i++) {
@@ -34,4 +35,22 @@ clearButton.addEventListener('click', function () {
     for (i = 0; i < (gridSize * gridSize); i++) {
         boxes[i].style.background = ''
     }
+})
+
+let sizeButton = document.getElementsByName('size')[0]
+
+function removeGrid() {
+
+}
+
+// THIS Change the grid size.
+sizeButton.addEventListener('click', function () {
+    let parent = document.getElementById('grid')
+    let child = document.getElementsByClassName('box')
+    for (i = 0; i < (gridSize * gridSize); i++) {
+        parent.removeChild(child[0])
+    }
+    let sizeInput = window.prompt()
+    gridSize = sizeInput
+    createGrid(gridSize)
 })
